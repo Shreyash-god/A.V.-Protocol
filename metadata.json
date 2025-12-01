@@ -1,0 +1,7 @@
+{
+  "name": "J.A.R.V.I.S. Protocol",
+  "description": "A browser-based AI system interface powered by Gemini Live API. Simulates system automation, diagnostics, and multi-lingual voice control.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
