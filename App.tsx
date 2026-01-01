@@ -173,7 +173,15 @@ const App: React.FC = () => {
       
       {/* Dynamic Background */}
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none"></div>
-      <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-${activeProfile.themeColor}-500 to-transparent opacity-50`}></div>
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        height: '4px',
+        background: `linear-gradient(to right, transparent, ${activeProfile.themeColor === 'cyan' ? '#06b6d4' : activeProfile.themeColor === 'purple' ? '#a855f7' : activeProfile.themeColor === 'green' ? '#22c55e' : activeProfile.themeColor === 'red' ? '#ef4444' : activeProfile.themeColor === 'amber' ? '#f59e0b' : '#06b6d4'}, transparent)`,
+        opacity: 0.5
+      }} />
 
       {/* Header */}
       <header className="flex items-center justify-between p-3 md:px-6 border-b border-slate-800 bg-slate-900/90 backdrop-blur-md z-30 shadow-lg">
