@@ -77,5 +77,16 @@
       </div>
       <noscript><p style="text-align:center;padding:20px;color:#e2e8f0;">JavaScript is required to run this application. Please enable JavaScript in your browser.</p></noscript>
     <script type="module" src="/index.tsx"></script>
+  <script>
+    // Auto-hide loading spinner after 5 seconds if React hasn't mounted
+    window.addEventListener('load', function() {
+      const loadingEl = document.getElementById('loading');
+      setTimeout(() => {
+        if (loadingEl) {
+          loadingEl.style.display = 'none';
+        }
+      }, 5000);
+    });
+  </script>
   </body>
 </html>
