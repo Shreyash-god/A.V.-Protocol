@@ -360,6 +360,7 @@ const App: React.FC = () => {
       <footer className="p-1 border-t border-slate-800 bg-slate-950 text-center flex justify-between px-4 text-[9px] text-slate-600 font-mono uppercase tracking-widest">
         <span>STARK INDUSTRIES SECURE SERVER</span>
         <span>SESSION ID: {activeProfileId.slice(0,8)}</span>
+         <span style={{fontSize: '8px'}}>Copyright © 2025 Shreyash Ghosh. All Rights Reserved.</span>
       </footer>
 
       {/* Modals */}
